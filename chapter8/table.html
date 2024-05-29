@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <p><a href="../index.html">Home</a></p>
+    <h1>Chapter 8: Images in HTML</h1>
+    <h2>Topics we are going to learn in this page: </h2>
+    <ol>
+        <li><a href="#table">table</a>  tag</li>
+        <li><a href="#tr">tr</a> tag</li>
+        <li><a href="#th">th</a> tag</li>
+        <li><a href="#td">td</a> tag</li>
+        <li><a href="#tfoot">tfoot</a> tag</li>
+        <li><a href="#colspan">colspan</a> attribute</li>
+        <li><a href="#rowspan">rowspan</a> attribute</li>
+    </ol>
+    <h2>Explantion of the topics: </h2>
+    <ol>
+        <li>
+            <h3 id="table"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a></h3>
+            <ul>
+                <li>The &lttable&gt HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</li>
+                <li>In earlier days of web development website's navigation bar, main content, header, footer were desigened using the table. (Now days css flexbox and grid is used.)</li>
+                <li>"table>tr>th*3" + Enter Key : to automatically create a table with 3 table heading.</li>
+                <li>"tr*4>td*3" + Enter Key : to automatically create a table with (4 row X 3 column) data table.</li>
+                <li><span id="tr">&lttr&gt</span> means table row element, <span id="th">&ltth&gt</span> means table heading element and <span id="td">&lttd&gt</span> means table data element.</li>
+                <li>Press tab key after entering a data in a table head to go to another table-head or table-data for enterring data.</li>
+                <li>table, th, td needs to apply some css to see proper brdering. The th and td needs the "border" value and the table needs the "border-collapse" value as "collapse"</li>
+                <li>
+                    <p>Example: <br>Code:</p>
+                    <pre>
+    &lt!-- CSS part --&gt
+    &ltstyle&gt
+        table{
+            text-align: center;
+            width: 50%;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){                 /* For this line, the following css properties will only appli on every even rows. */
+            background-color: #e6d6d6;
+        }
+    &lt/style&gt
+
+        
+    &lt!-- HTML part --&gt
+    &lttable&gt
+        &lttr&gt
+            &ltth&gtCountry&lt/th&gt
+            &ltth&gtCountry code&lt/th&gt
+            &ltth&gtEmail&lt/th&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtIndia&lt/td&gt
+            &lttd&gtIN&lt/td&gt
+            &lttd&gtindia@google.com&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtAmerica&lt/td&gt
+            &lttd&gtUSA&lt/td&gt
+            &lttd&gtusa@google.com&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtJapan&lt/td&gt
+            &lttd&gtJP&lt/td&gt
+            &lttd&gtjp@google.com&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtChina&lt/td&gt
+            &lttd&gtCN&lt/td&gt
+            &lttd&gtcn@google.com&lt/td&gt
+        &lt/tr&gt
+    &lt/table&gt
+                    </pre>
+                    <p>Output:</p>
+                    <!-- CSS part -->
+                    <style>
+                        table{
+                            text-align: center;
+                            width: 50%;
+                            border-collapse: collapse;
+                        }
+                        td, th{
+                            border: 2px solid black;
+                            padding: 10px;
+                        }
+                        tr:nth-child(even){                 /* For this line, the following css properties will only appli on every even rows. */
+                            background-color: #e6d6d6;
+                        }
+                    </style>
+
+                    <!-- HTML part -->
+                    <table>
+                        <tr>
+                            <th>Country</th>
+                            <th>Country code</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>India</td>
+                            <td>IN</td>
+                            <td>india@google.com</td>
+                        </tr>
+                        <tr>
+                            <td>America</td>
+                            <td>USA</td>
+                            <td>usa@google.com</td>
+                        </tr>
+                        <tr>
+                            <td>Japan</td>
+                            <td>JP</td>
+                            <td>jp@google.com</td>
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                            <td>CN</td>
+                            <td>cn@google.com</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3 id="colspan">colspan</h3>
+            <ul>
+                <li>colspan marge 2 or more column into 1 single column.</li>
+                <li>
+                    <p>Example: <br>code:</p>
+                    <pre>
+    &lttable&gt
+        &lttr&gt
+            &lttd colspan="2"&gt1&lt/td&gt
+            &lt!-- &lttd&gt2&lt/td&gt --&gt
+            &lttd&gt3&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt4&lt/td&gt
+            &lttd&gt5&lt/td&gt
+            &lttd&gt6&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gt7&lt/td&gt
+            &lttd&gt8&lt/td&gt
+            &lttd&gt9&lt/td&gt
+        &lt/tr&gt
+    &lt/table&gt
+                    </pre>
+                    <p>Output</p>
+                    <table>
+                        <tr>
+                            <td colspan="2">1</td>
+                            <!-- <td>2</td> -->
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3 id="rowspan">rowspan</h3>
+            <ul>
+                <li>rowspan marge 2 or more roes into 1 single row.</li>
+                <li>
+                    <p>Example: <br>code:</p>
+                    <pre>
+    &lttable&gt
+        &lttr&gt
+            &lttd rowspan="3"&gt1&lt/td&gt
+            &lttd&gt2&lt/td&gt
+            &lttd&gt3&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lt!-- &lttd&gt4&lt/td&gt --&gt
+            &lttd&gt5&lt/td&gt
+            &lttd&gt6&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lt!-- &lttd&gt7&lt/td&gt --&gt
+            &lttd&gt8&lt/td&gt
+            &lttd&gt9&lt/td&gt
+        &lt/tr&gt
+    &lt/table&gt
+                    </pre>
+                    <p>Output</p>
+                    <table>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>4</td> -->
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>7</td> -->
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <br><br>
+        </li>
+        <li>
+            <h3 id="tfoot"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot">tfoot</a></h3>
+            <p>The &lttfoot&gt HTML element encapsulates a set of table rows (&lttr&gt elements), indicating that they comprise the foot of a table with information about the table's columns. This is usually a summary of the columns, e.g., a sum of the given numbers in a column.</p>
+        </li>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+    </ol>
+</body>
+</html>

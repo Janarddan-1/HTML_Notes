@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <p><a href="../index.html">Home</a></p>
+    <h1>Chapter 4: List</h1>
+    <p>HTML lists allow web developers to group a set of related items in lists. There are 3 type of list in HTML: 1. Ordered List (&ltol&gt), 2. Unordered List (&ltul&gt), 3. Defination or Description List (&ltdl&gt)</p>
+    <h2>Tags we are going to learn in this page:</h2>
+    <ol>
+        <li><a href="#ol">ol </a>(Ordered List)</li>
+        <li><a href="#ul">ui </a>(Unordered List)</li>
+        <li><a href="#li">li </a>(List Item)</li>
+        <li><a href="#dl">dl </a>(Description List)</li>
+        <li><a href="#dt">dt </a>(Description Term)</li>
+        <li><a href="#dd">dd </a>(Description Details)</li>
+    </ol>
+    <h2>Explantion of the topics: </h2>
+    <ol>
+        <li>
+            <h3 id="ol"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">Ordered List:</a></h3>
+            <ul>
+                <li>&ltol&gt tag is used to define an ordered list. In this list items are listed in a numarical(By default) or alphabetical order.</li>
+                <li id="li"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">&ltli&gt</a>  ta g is used to store list items</li>   
+                <li>Changing the ordering type: For &ltol&gt there is an attribute named "type", we can set the type value with "1", "a", "A", "i", "I" (1-2-3-..., a-b-c-..., A-B-C-..., i-ii-iii-..., I-II-III-...).</li>
+                <li>Emmet Shortcut: " ol>li*4 + Enter Key " for making 4 ordered list. </li>
+                <li>
+                    <p>Example: <br> Code:</p>
+                    <pre>
+    &ltol type="a"&gt
+        &ltli&gt HTML &lt/li&gt
+        &ltli&gt CSS &lt/li&gt
+        &ltli&gt Javacrript &lt/li&gt
+    &lt/ol&gt
+                    </pre>
+                    <p>Output:</p>
+                    <ol type="a">
+                        <li> HTML</li>
+                        <li> CSS</li>
+                        <li> Javacrript</li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+        </li>
+        <li>
+            <h3 id="ul"><a href="">Unordered List</a></h3>
+            <ul>
+                <li>The &ltul&gt element is for grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless. Typically, unordered-list items are displayed with a bullet.</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">&ltli&gt</a>  ta g is used to store list items</li>
+                <li>We can change the bullet style with CSS.</li>
+                <li>Emmet Shortcut: " ul>li*4 + Enter Key " for making 4 unordered list.</li>
+                <li>
+                    <p>Example: <br> Code:</p>
+                    <pre>
+    &ltul&gt
+        &ltli&gt HTML &lt/li&gt
+        &ltli&gt CSS &lt/li&gt
+        &ltli&gt Javacrript &lt/li&gt
+    &lt/ul&gt
+                    </pre>
+                    <p>Output:</p>
+                    <ul>
+                        <li> HTML</li>
+                        <li> CSS</li>
+                        <li> Javacrript</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+        </li>
+        <li>
+            <h3 id="dl"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">Description List</a></h3>
+            <ul>
+                <li>The &ltdl&gt tag defines the description list. A description list is a list of terms, with a description of each term</li>
+                <li id="dt">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt">&ltdt&gt</a> tag defines a term/name in a description list.</li>
+                <li id="dd">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd">&ltdd&gt</a> tag is used to describe a term/name in a description list.</li>
+                <li>
+                    <p>Example: <br>Code:</p>
+                    <pre>
+    &ltdl&gt
+        &ltdt&gtHTML&lt/dt&gt
+        &ltdd&gt-HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.&lt/dd&gt
+        &ltdt&gtCSS&lt/dt&gt
+        &ltdd&gt-CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media.&lt/dd&gt
+        &ltdt&gtJavascript&lt/dt&gt
+        &ltdd&gt-Javascript, often abbreviated as JS, is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code. JavaScript is an interpreted language.&lt/dd&gt
+    &lt/dl&gt
+                    </pre>
+                    <p>Output:</p>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>-HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</dd>
+                        <dt>CSS</dt>
+                        <dd>-CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</dd>
+                        <dt>Javascript</dt>
+                        <dd>-Javascript, often abbreviated as JS, is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code. JavaScript is an interpreted language.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+</body>
+</html>
+
