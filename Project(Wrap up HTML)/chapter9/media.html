@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_iframe_&_Modern_HTML_Semantic</title>
+</head>
+<body>
+    <p><a href="../index.html">Home</a></p>
+    <h1>Chapter 9: Media, iframe & Modern HTML Semantic</h1>
+    <h2>Topics we are going to learn in this page: </h2>
+    <ol>
+        <li><a href="#iframe">iframe</a> tag</li>
+        <li><a href="#video">video</a> tag</li>
+        <li><a href="#audio">audio</a> tag</li>
+        <li><a href="#semantics">HTML Semantics</a></li>
+    </ol>
+    <h2>Explantion of the topics: </h2>
+    <ol>
+        <li>
+            <h3 id="iframe"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">iframe</a></h3>
+            <ul>
+                <li>The &ltiframe&gt HTML element represents a nested browsing context, embedding another HTML page into the current one.</li>
+                <li>Insert the "embed" code of the other webpage in to our html document to open that browser window inside our page. Eg: In any YouTube video click on share option then click on "Embed" then the embed code will be shown with iframe tag, copy paste the code into your html document.</li>
+                <li>
+                    <p>Example: <br>Code:</p>
+                    <pre>
+    &ltiframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=FZhbl0BC0j6DSYA2&amp;start=445" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt&lt/iframe&gt
+                    </pre>
+                    <p>Output</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=FZhbl0BC0j6DSYA2&amp;start=445" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </ul>
+            <br><br><br>
+            <hr>
+        </li>
+        <li>
+            <h3 id="video"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">video</a> & <a id="audio" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">audio</a></h3>
+            <ul>
+                <li>The &ltvideo&gt HTML element embeds a media player which supports video playback into the document. You can use &ltvideo&gt for audio content as well, but the &ltaudio&gt element may provide a more appropriate user experience.</li>
+                <li>The &ltvideo&gt tag contains the width, height, controls and some other attribute as required and a &ltsource&gt tag for storing the file path</li>
+                <li>The &ltaudio&gt HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the &ltsource&gt element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.</li>
+                <li>
+                    <p>Example (video): <br>Code:</p>
+                    <pre>
+    &ltvideo height="720px"  muted controls&gt
+        &ltsource src="./video/wcup23.mp4"&gt
+    &lt/video&gt
+                    </pre>
+                    <p>Output</p>
+                    <video height="720px"   muted controls>
+                        <source src="./video/wcup23.mp4">
+                    </video>
+                </li>
+            </ul>
+            <br><br><br><hr>
+        </li>
+        <li>
+            <h3 id="semantics"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">semantics</a></h3>
+            <ul>
+                <li>A semantic element clearly describes its meaning to both the browser and the developer.</li>
+                <li>In earlier days of web development all the different part of a web page are grouped together with a &ltdiv&gt tag, which represent only grouping without any meaning.Eg: &ltdiv id="nav"&gt &ltdiv class="header"&gt &ltdiv id="footer"&gt to indicate navigation, header, and footer.</li>
+                <li>Now days mordern HTML semantics like&nbsp; &ltnav&gt, &nbsp;&ltmain&gt, &nbsp;&ltheader&gt, &nbsp;&ltfooter&gt, &nbsp;&ltsummary&gt, &nbsp;&lttime&gt etc, which are used to group HTML element with a proper meaning. (These are the frequently used groups, so the mordern HTML make them as a seperate element.)</li>
+                <li>Benefits of semantics: 
+                    <ul>
+                        <li>Easier Accessibility: It makes easier for screen reader software and other developer to identify deifferent section of the webpage.</li>
+                        <li>SEO: It make the website more search engine optimized.</li>
+                    </ul>
+                </li>
+                <li>No need to remember all the semantics, learn them while doing projects.</li>
+                <li>Example: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Go to this w3schools website</a></li>
+            </ul>
+        </li>
+    </ol>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading & Paragraph</title>
+</head>
+<body>
+    <p><a href="../index.html">Home</a></p>
+    <h1>Chapter 2: Heading & Paragraph</h1>
+    <h2>Topics we are going to learn in this page: </h2>
+    <ol>
+        <li><a href="#h"><strong>h</strong></a> tag</li>
+        <li><a href="#p"><strong>p</strong></a> tag</li>
+        <li><a href="#br"><strong>br</strong></a> tag</li>
+        <li><a href="#pre"><strong>pre</strong></a> tag</li>
+        <li><a href="#hr"><strong>hr</strong></a> tag</li>
+        <li><a href="#title"><strong>title attribute</strong></a></li>
+    </ol>
+
+    <h2>Explantion of the topics: </h2>
+    <ol>
+        <li>
+            <h3 id="h"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h tag</a></h3>
+            <ul>
+                <li>&lth1&gt...&lt/h1&gt  to  &lth6&gt...&lth6&gt  represent 6 level of heading.</li>
+                <li>&lth1&gt is the highest level and &lth6&gt is the lowest level.</li>
+                <li>A page should generally have a single &lth1&gt element that describes the content of the page.</li>
+                <li>We should not used h tag just to increase font size.(With css we can make font of a h6 heading bigger than h1 heading). H tag should only contains main hading and sub headings of the web page content for proper structuring.</li>
+                <li>We should not skip in between level between 2 h tag level. Alwayes 1st &lth1&gt then &lth2&gt, &lth3&gt, &lth4&gt, &lth5&gt and finally &lth6&gt. </li>
+                <li>Example:
+                    <div>
+                    <P>Code:</P>
+                        <pre>
+    &lth1&gtHeading level 1&lt/h1&gt
+    &lth2&gtHeading level 2&lt/h2&gt
+    &lth3&gtHeading level 3&lt/h3&gt
+    &lth4&gtHeading level 4&lt/h4&gt
+    &lth5&gtHeading level 5&lt/h5&gt
+    &lth6&gtHeading level 6&lt/h6&gt                             
+                        </pre>
+                    <P>Output:</P>
+                            <h1>Heading level 1</h1>
+                            <h2>Heading level 2</h2>
+                            <h3>Heading level 3</h3>
+                            <h4>Heading level 4</h4>
+                            <h5>Heading level 5</h5>
+                            <h6>Heading level 6</h6>
+                    </div>
+                
+                </li>
+            </ul>
+            <hr>
+        </li>
+        <li>
+            <h3 id="p"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p tag</a></h3>
+            <ul>
+                <li>&ltp&gt tag represents a paragraph.</li>
+                <li>"p&gtlorem20 + enter key" -  to create a auto generated paragraph (here 20 is the number of words)</li>  
+                <li>Example: 
+                    <p>Code:</p>
+                        <pre>
+    &ltp&gtLorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi nihil sed quisquam beatae vitae repellendus inventore nemo fuga praesentium.&lt/p&gt
+                        </pre>
+                    <p>Output:</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi nihil sed quisquam beatae vitae repellendus inventore nemo fuga praesentium.</p>
+                </li>
+            </ul>
+            <hr>
+        </li>
+        <li>
+            <h3 id="br"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">br</a></h3>
+            <p>The &ltbr&gt HTML element produces a line break in text. It is useful for writing a poem or an address, where the division of lines is significant.</p>
+            <hr>
+        </li>
+        <li>
+            <h3 id="pre"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">pre</a></h3>
+            <p>The &ltpre&gt HTML element represents preformatted text which is to be presented exactly as written in the HTML file.</p>
+            <p>Example: <br>Code:</p>
+            <pre title="cow">
+                &ltpre title="Cow"&gt
+
+                    ^  ^
+                    (oo)\_______
+                    (__) \       )\
+                        ||----w |
+                        ||     ||
+
+                &lt/pre&gt
+            
+            </pre>
+            <p>Output</p>
+            <pre title="Cow">
+                   ^  ^
+                   (oo)\_______
+                   (__) \       )\
+                        ||----w |
+                        ||     ||
+            </pre>
+            <hr> 
+        </li>
+        <li>
+            <h3 id="hr"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">hr</a></h3>
+            <p>The &lthr&gt HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. Most often displayed as a horizontal line   </p>
+            <p>Example:     code: &lthr&gt,     Output: the horizontal line displayed in this page after every topic</p>
+            <hr>
+        </li>
+        <li>
+            <h3 id="title"><a href="https://www.w3schools.com/tags/att_global_title.asp">title attribute</a></h3>
+            <p>The title attribute is used to specify extra information about the element. When the mouse moves over the element then it shows the information. This is a global attribute, means it can be used with every html elements or tags.</p>
+            <p>Example: <br>Code:</p>
+            <pre>
+    &ltp title="This paragraph is an example of to show what tital attribute can do."&gt  
+        This is an example. One another example is the above cow diagram in the &ltpre&gt tag example, move the mouse over the cow diagram and see the text writing on the tital of that pre tag.  
+    &lt/p&gt
+            </pre>
+            <p>Output:</p>
+            <p title="This paragraph is an example of to show what tital attribute can do.">
+                This is an example. One another example is the above cow diagram in the &ltpre&gt tag example, move the mouse over the cow diagram and see the text writing on the tital of that pre tag. 
+            </p>
+        </li>
+    </ol>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+</body>
+</html>
+
